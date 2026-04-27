@@ -13,6 +13,7 @@
     "db:studio": "prisma studio"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^0.0.66",
     "@clerk/nextjs": "^5.7.5",
     "@prisma/client": "^5.22.0",
     "@radix-ui/react-dialog": "^1.1.4",
