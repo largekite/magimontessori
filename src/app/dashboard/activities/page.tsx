@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // Standalone Montessori activity cards and printable materials organized by developmental area
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function ActivitiesPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }
