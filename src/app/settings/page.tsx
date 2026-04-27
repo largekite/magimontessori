@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // Workspace settings, child profile management, notification preferences, and integrations
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function SettingsPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }
