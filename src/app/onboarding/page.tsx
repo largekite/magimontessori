@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // Set up a family or classroom workspace, add child profiles with age and interests, and choose a learning focus area
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function OnboardingPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }
