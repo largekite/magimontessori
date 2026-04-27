@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // Interactive book reader with illustrations, activities, quizzes, and read-aloud support
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function BookReaderPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }
