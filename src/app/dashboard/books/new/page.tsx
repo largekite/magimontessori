@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // AI-powered book generator — choose child, topic, Montessori area, and difficulty to create a personalized book
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function CreateBookPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }
