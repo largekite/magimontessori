@@ -1,9 +1,8 @@
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import { Plus, Zap, ArrowRight } from 'lucide-react';
-import { auth, UserButton } from '@clerk/nextjs/server';
-
-import { auth, UserButton } from '@clerk/nextjs/server';
+import { auth } from '@clerk/nextjs/server';
+import { UserButton } from '@clerk/nextjs';
 
 export default async function DashboardPage() {
   const { userId } = await auth();
