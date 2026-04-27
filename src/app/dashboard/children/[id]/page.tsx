@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // Individual child's learning journey, completed books, skill progress, and recommended next activities
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function ChildDetailPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }
