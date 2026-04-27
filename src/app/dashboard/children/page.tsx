@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // List of all child profiles with learning stats, age, and current skill levels
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function ChildProfilesPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }
