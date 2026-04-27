@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // Browse all generated and saved learning books with filter by subject, age group, and completion status
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function BooksLibraryPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }

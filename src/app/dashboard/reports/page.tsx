@@ -3,8 +3,6 @@ import { auth } from '@clerk/nextjs/server';
 
 // Detailed learning analytics per child with milestone tracking and printable reports for educators
 
-import { auth } from '@clerk/nextjs/server';
-
 export default async function ProgressReportsPage() {
   const { userId } = await auth();
   if (!userId) { redirect('/sign-in'); }
